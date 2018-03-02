@@ -1,10 +1,10 @@
 jdecent:
-    profile: "TEAMLAB at Gachon university."
-    personal skills:
-        - "C#, ASP.NET MVC"
-        - "XAML, WPF, LINQ, Silverlight"
-        - "JavaScript, jQuery, HTML5, CSS, LESS"
-        - "Web Services, Active Directory, Windows 10, Windows Phone Apps"
+    profile: "TEAMLAB at Gachon University."
+    skills:
+        - "Python, Java"
+        - "Data Analysis"
+        - "Machine Learning, Deep Learning"
+        - "Web Services"
     education:
         - time:             "2009 - 2011"
           location:         "University of Someplace"
