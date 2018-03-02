@@ -6,7 +6,7 @@ default:                                                      # Fallback if noth
   bio:                                                        # OPTIONAL: text below author name in posts
   location:     Korea                                       # OPTIONAL: used to display location of the author
   website:      "http://theteamlab.io/"                    						  # OPTIONAL: link to the author of a post
-  email:                                                      # OPTIONAL: used in the about page
+  email:        "sc82.choi@gachon.ac.kr"                                              # OPTIONAL: used in the about page
   twitter:                                                    # OPTIONAL: used in the about page
   linkedin:                                                   # OPTIONAL: used in the about page
   xing:                                                       # OPTIONAL: used in the about page
@@ -30,9 +30,9 @@ jdecent:
   picture:      /assets/teamlab.jpg
   bio:
   location:     Korea
-  email:        "-"   
-  twitter:      "-"    
-  twitch:       "-"
+  email:        "sc82.choi@gachon.ac.kr"
+  twitter:
+  twitch:
 jwillmer:
   initial:      jwillmer
   name:         "Jaeyoung Kim"
