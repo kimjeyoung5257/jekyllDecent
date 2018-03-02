@@ -1,7 +1,7 @@
 default:                                                      # Fallback if nothing is specified
   initial:      jdecent                                       # used for author lookup in posts and for first two characters in the about page back button
   name:         "TEAMLAB"                               # used to display author name
-  cover:        /assets/mountain-alternative-cover.jpg        # OPTIONAL: defines location of cover image in about page
+  cover:        /assets/test.jpg        # OPTIONAL: defines location of cover image in about page
   picture:      /assets/teamlab.jpg                           # OPTIONAL: author picture
   bio:                                                        # OPTIONAL: text below author name in posts
   location:     Korea                                       # OPTIONAL: used to display location of the author
@@ -26,7 +26,7 @@ default:                                                      # Fallback if noth
 jdecent:
   initial:      jdecent
   name:         "TEAMLAB"
-  cover:        /assets/mountain-alternative-cover.jpg  
+  cover:        /assets/test.jpg
   picture:      /assets/teamlab.jpg
   bio:
   location:     Korea
