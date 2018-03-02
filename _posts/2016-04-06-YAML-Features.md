@@ -1,6 +1,6 @@
 ---
 layout:            post
-title:             "YAML Custom Features"
+title:             "Cross-entropy"
 menutitle:         "YAML Features"
 date:              2016-04-06 00:40:00 +0300
 tags:              Jekyll YAML Features Explained
