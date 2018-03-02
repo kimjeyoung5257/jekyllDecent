@@ -37,8 +37,8 @@ jwillmer:
   initial:      jwillmer
   name:         "Jaeyoung Kim"
   picture:      /assets/kimjeyoung.png
-  bio:          All about technology 
+  bio:          Researcher of Teamlab
   location:     Korea
-  website:      "http://jwillmer.de/cv" 
-  twitter:      jenswillmer
-  github:       jwillmer
+  website:      "https://kimjeyoung.github.io/about"
+  twitter:
+  github:
