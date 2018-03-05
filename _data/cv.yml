@@ -33,7 +33,7 @@ jdecent:
           technologies:     "Python, Tensorflow, Logstash"
           responsibilities:
             - "Program2vec applied Doc2vec model so that each program has high-dimensional vector used visualization."
-            
+
         - time:             "9 months in 2016"
           team:             "Team of 6"
           title:            "Android App"
