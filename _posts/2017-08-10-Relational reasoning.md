@@ -13,9 +13,17 @@ math:              true
 
 <figure>
    <img src="{{ "/media/img/CLEVER.jpg" | absolute_url }}" />
-   <figcaption>[CLEVER dataset](https://cs.stanford.edu/people/jcjohns/clevr/)</figcaption>
+   <figcaption>CLEVER dataset</figcaption>
 </figure>
 
-위의 이미지는 관계추론의 모델에서 쓰이는 CLEVER 데이터셋의 일부입니다. 우리가 일반적인 분류문제나 Detection 을 풀고자 한다면 원통은 몇 개, 빨간 색 구의 여부,
+위의 이미지는 관계추론의 모델에서 쓰이는 [CLEVER](https://cs.stanford.edu/people/jcjohns/clevr/) 데이터셋의 일부입니다. 우리가 일반적인 분류문제나 Detection 을 풀고자 한다면 원통은 몇 개, 빨간 색 구의 여부,
 등을 파악할 수 있을 것입니다. 하지만 이러한 경우 "파란색 정육면체 뒤에 있는 구는 어떠한 색을 가지고 있니?" 라는 질문은 해결 할 수 없습니다.
 하지만 관계추론 모델의 경우 어떠한 환경(이미지) 에서 존재하는 객체들(ex, 구, 직육면체, 정육면체)과의 상호적인 관계를 따져 답을 유추하는 모델입니다.
+그럼 이제부터 모델의 구조를 보면서 하나씩 살펴보겠습니다!
+
+<figure>
+   <img src="{{ "/media/img/CLEVER.jpg" | absolute_url }}" />
+   <figcaption>출처: https://arxiv.org/pdf/1706.01427.pdf</figcaption>
+</figure>
+
+위의 구조가 논문에서 제시한 모델의 구조입니다. 
