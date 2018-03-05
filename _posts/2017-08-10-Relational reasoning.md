@@ -28,4 +28,5 @@ math:              true
 
 위의 구조가 논문에서 제시한 모델의 구조입니다. 이 구조는 크게 CNN, LSTM, RN 이며 RN 을 이용해서 object 들의 관계를 나타냅니다. RN 에 대한 설명은 잠시 뒤로 미루고 인풋레이어부터 살펴보죠!
 visual QA 의 경우 input 으로 필요한 것은 무엇일까요? 모델의 구조에서 볼 수 있듯이 이미지와 이미지에서 물어보고 싶은 질문이 될 것입니다.
-따라서 이미지는 CNN, 질문의 경우 LSTM의 인풋으로 들어가게 됩니다. 
+따라서 이미지는 CNN, 질문의 경우 LSTM의 인풋으로 들어가게 됩니다. 논문에 따르면 CNN 은 총 4개의 convolutional layer를 가지는데 각각의 convolutional layer 는
+24개의 $$3\times 3$$ 커널사이즈, stride 는 2로 주는 것이 가장 best 였다고 합니다.
