@@ -22,7 +22,7 @@ math:              true
 그럼 이제부터 모델의 구조를 보면서 하나씩 살펴보겠습니다!
 
 <figure>
-   <img src="{{ "/media/img/CLEVER.jpg" | absolute_url }}" />
+   <img src="{{ "/media/img/RN.png" | absolute_url }}" />
    <figcaption>출처: https://arxiv.org/pdf/1706.01427.pdf</figcaption>
 </figure>
 
