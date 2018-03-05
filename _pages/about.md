@@ -1,7 +1,7 @@
 ---
 layout:    about
 permalink: "/about"
-author:    jdecent
+author:    teamlab
 keywords:  about person demo example
 title:     About TEAMLAB
 menutitle: About

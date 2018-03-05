@@ -1,5 +1,5 @@
 default:                                                      # Fallback if nothing is specified
-  initial:      jdecent                                       # used for author lookup in posts and for first two characters in the about page back button
+  initial:      teamlab                                       # used for author lookup in posts and for first two characters in the about page back button
   name:         "TEAMLAB"                               # used to display author name
   cover:        /assets/test.jpg        # OPTIONAL: defines location of cover image in about page
   picture:      /assets/teamlab.jpg                           # OPTIONAL: author picture
@@ -23,8 +23,8 @@ default:                                                      # Fallback if noth
   twitch:                                                     # OPTIONAL: used in the about page
   s500px:                                                     # OPTIONAL: used in the about page
   reddit:                                                     # OPTIONAL: used in the about page
-jdecent:
-  initial:      jdecent
+teamlab:
+  initial:      teamlab
   name:         "TEAMLAB"
   cover:        /assets/test.jpg
   picture:      /assets/teamlab.jpg
@@ -33,7 +33,7 @@ jdecent:
   email:        "sc82.choi@gachon.ac.kr"
   twitter:
   twitch:
-jwillmer:
+kimjeyoung:
   initial:      kimjeyoung
   name:         "Jaeyoung Kim"
   picture:      /assets/kimjeyoung.png
