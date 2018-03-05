@@ -5,7 +5,7 @@ menutitle:         "Cross-entropy"
 date:              2016-04-06 00:40:00 +0300
 tags:              Jekyll YAML Features Explained
 category:          Machine Learning Theory
-author:            jwillmer
+author:            kimjeyoung
 cover:             /assets/mountain-alternative-cover.jpg
 published:         true
 redirect_from:     "/YAML-Features-Redirect/"
