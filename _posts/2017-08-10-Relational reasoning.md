@@ -27,9 +27,18 @@ math:              true
 </figure>
 
 위의 구조가 논문에서 제시한 모델의 구조입니다. 이 구조는 크게 CNN, LSTM, RN 이며 RN 을 이용해서 object 들의 관계를 나타냅니다. RN 에 대한 설명은 잠시 뒤로 미루고 인풋레이어부터 살펴보죠!
-visual QA 의 경우 input 으로 필요한 것은 무엇일까요? 모델의 구조에서 볼 수 있듯이 이미지와 이미지에서 물어보고 싶은 질문이 될 것입니다.
+visual QA 의 경우 input 으로 필요한 것은 무엇일까요? 모델의 구조에서 볼 수 있듯이 이미지와 이미지에서 물어보고 싶은 질문이 될 것입니다. <br>
+
+### CNN
+
 따라서 이미지는 CNN, 질문의 경우 LSTM의 인풋으로 들어가게 됩니다. 논문에 따르면 CNN 은 총 4개의 convolutional layer를 가지는데 각각의 convolutional layer 는
 convolution + ReLu non-linearity + batch normalization 으로 이루어져 있습니다. Max-pooling 은 사용하지 않았는데 논문에서 언급하지는 않았지만 이유를 생각해보자면
 이미지에서 존재하는 각각의 object 간의 positional relation 를 가지고 가야 하기 때문이고 Max-pooling 을 이용하게 되면 FOV(Field Of View)를 넓힐 수 는 있지만
 그에따른 object 의 다양한 정보들의 손실이 불가피하기 때문에 pooling을 사용하지 않은 것 같습니다. 다시 모델의 구조를 보면 4번의 convolutional layer를 거치게 될 경우
-$$ d \timest d $$ 의 크기를 가지는 $$ k $$ 개의 feature map 이 형성되어집니다.
+$$ d \times d $$ 의 크기를 가지는 $$ k $$ 개의 feature map 이 형성되어집니다. <br>
+그렇다면 이 feature map 에서 어떻게 object 를 선택할까요.
+모델구조중 Final CNN feature maps 에서 볼 수 있듯이 하나의 sub-object 는 feature map 의 같은 위치의 값들의 벡터로 이루어 집니다. 위의 구조에서는 빨, 파, 노 로 이루어진 벡터들이겠죠?
+각각의 object 들은 texture, conjunction of physical objects, background 등을 나타낼 수 있습니다. 이렇게 object 들을 선택하게 되면 각각의 object 들간의 공간적인 관계는 표현하지 못하더라도
+object 의 location 정보와 좀 더 다양한 object 의 특성들을 가지고 갈 수 있게 됩니다. <br>
+
+### LSTM
