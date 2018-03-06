@@ -1,6 +1,6 @@
 ---
 layout:            post
-title:             "Relational reasoning"
+title:             "Relational reasoning (Deepmind)"
 date:              2017-08-10 13:10:00 +0300
 tags:              A simple neural network module for relational reasoning ( Adam Santoro et al., 2017 )
 category:          Deep Learning paper review
