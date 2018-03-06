@@ -59,9 +59,15 @@ CNN을 통해서 나온 object의 invariant properties 와 LSTM을 통해서 나
 $$ RN(O) = f_\phi (\sum_{i,j} g_\theta(o_i, o_j, q) ) $$
 
 이 한줄이 RN 의 수식입니다. $$ i \in (1, d\times d) $$ 이겠죠? 수식에 따르면 모든 조합을 따지지만 논문의 저자는 모든 조합을 이용하지 않아도 된다고 합니다. 따라서 어떠한 문제를 푸느냐에 따라 유동적으로 선택하면 될 듯 합니다.
-$$ f_\phi , g_\theta $$ 는 MLP 이며 $$ g_theta $$ 의경우 3 fc-layer로 이루어져 있으며 각각 256 의 unit 을 가지고 있습니다. $$ f_\phi $$ 또한 3 fc-layer 이며 256, 256, 23 의 unit 개수를 가집니다.
+$$ f_\phi , g_\theta $$ 는 MLP 이며 $$ g_\theta $$ 의경우 3 fc-layer로 이루어져 있으며 각각 256 의 unit 을 가지고 있습니다. $$ f_\phi $$ 또한 3 fc-layer 이며 256, 256, 23 의 unit 개수를 가집니다.
 $$ f_\phi $$의 마지막 layer를 제외한 layers는 ReLu 를 사용했습니다.
 
+직관적인 이해를 위해 모델의 구조와 함께 살펴보겠습니다.
+
+<figure>
+   <img src="{{ "/media/img/RN_architecture.png" | absolute_url }}" />
+   <figcaption>RN 구조</figcaption>
+</figure>
 
 
 
