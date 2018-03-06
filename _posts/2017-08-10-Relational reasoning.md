@@ -54,4 +54,6 @@ word 단위의 vector 가 input으로 이용이 되며 최종적인 state 의 ou
 ### RN
 
 이제 이 논문의 핵심인 RN 에 대해서 알아보겠습니다. RN 의 구조는 굉장히 simple 하지만 좋은 성능을 보였습니다. 제가 생각하기에 RN을 간단히 나타내자면 object 조합에 대한 fully-connected 라고 생각합니다.
-CNN을 통해서 나온 object의 invariant properties 와 LSTM을 통해서 나온 질문에 대한 output 값을 사용해서 object 들간의 관계추론을 학습합니다.
+CNN을 통해서 나온 object의 invariant properties 와 LSTM을 통해서 나온 질문에 대한 output 값을 사용해서 object 들간의 관계추론을 학습합니다. 그럼 RN 의 수식을 한 번 볼까요?
+$$ RN(O) = f_\upsilon (\sum_{i,j} g_\theta(o_i, o_j) ) $$
+
