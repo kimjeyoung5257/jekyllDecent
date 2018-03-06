@@ -3,17 +3,16 @@ layout:            post
 title:             "Cross-entropy"
 menutitle:         "Cross-entropy"
 date:              2016-04-06 00:40:00 +0300
-tags:              Jekyll YAML Features Explained
+tags:              Cross-entropy
 category:          Machine Learning Theory
 author:            kimjeyoung
-cover:             /assets/mountain-alternative-cover.jpg
 published:         true
-redirect_from:     "/YAML-Features-Redirect/"
-cover:             /assets/mountain-alternative-cover.jpg
-language:          EN
 comments:          true
-math:			   false
+math:			   true
 ---
+
+<!--
+
 
 In this short post I changed the title that is displayed on the front page from `YAML Custom Features` to `YAML Features`.
 
@@ -137,3 +136,5 @@ citation:
 ```
 
 Additional features, that can be specified, can be found in the [YAML Front Matter documentation](https://jekyllrb.com/docs/frontmatter/).
+
+-->
