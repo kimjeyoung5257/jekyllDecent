@@ -48,4 +48,4 @@ object 의 location 정보와 좀 더 다양한 object 의 특성들을 가지�
    <figcaption>lstm 구조</figcaption>
 </figure>
 
-LSTM 의 경우 논문에서는 final state 를 이용합니다. 
+LSTM 의 경우 논문에서는 final state 를 이용합니다.
