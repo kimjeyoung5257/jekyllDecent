@@ -48,4 +48,7 @@ object 의 location 정보와 좀 더 다양한 object 의 특성들을 가지�
    <figcaption>lstm 구조</figcaption>
 </figure>
 
-LSTM 의 경우 논문에서는 final state 를 이용합니다.
+LSTM 의 경우 논문에서는 final state 만을 이용합니다. 여기서는 LSTM 에 대해서 설명하지는 않겠습니다. LSTM 의 인풋으로는 lookup table 의 trainable word vector 입니다. 그림에서 알 수 있듯이 time-step 마다
+word 단위의 vector 가 input으로 이용이 되며 최종적인 state 의 output 값과 CNN 의 구조의 object vector 의 조합으로 RN 네트워크를 형성합니다.
+
+### RN
