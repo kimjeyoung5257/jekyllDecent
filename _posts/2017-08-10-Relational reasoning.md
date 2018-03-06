@@ -71,4 +71,7 @@ $$ f_\phi $$의 마지막 layer를 제외한 layers는 ReLu 를 사용했습니�
 
 CNN 의 마지막 feature map에 대한 object 는 각각의 순서쌍으로 concatenate 되어 있습니다. 순서쌍으로만 끝나는 것이 아니라 각각의 순서쌍에 대해서 LSTM 의 final state output(q) 을 이어주게 됩니다.
 $$ (o_1 , o_2 , q) , (o_1 , o_3 , q) $$ 으로 구성이 되어 지겠죠? 그 다음 각각의 조합에 대해서 $$ g_\theta $$ 를 적용시킨 후 element-wise sum을 하게 되면 object들의 관계에 대한 표현이 나태내어 집니다.
-마지막으로 $$ f_\phi $$ 로 classification 을 거쳐 최종적인 output 을 뽑아냅니다. 
+마지막으로 $$ f_\phi $$ 로 classification 을 거쳐 최종적인 output 을 뽑아냅니다.
+
+논문에서는 loss function 으로 cross-entropy 를 사용하며 Adam optimizer 를 사용했습니다.
+RN 의 구조는 굉장히 간단하지만 성능면에서 SOTA(state-of-the-arts) 를 보였습니다. 여기까지가 모델에 대한 설명이고 다음 포스팅에서는 RN을 Tensorflow로 구현해 보는 시간을 가지겠습니다!
