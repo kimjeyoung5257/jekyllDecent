@@ -56,7 +56,12 @@ word 단위의 vector 가 input으로 이용이 되며 최종적인 state 의 ou
 이제 이 논문의 핵심인 RN 에 대해서 알아보겠습니다. RN 의 구조는 굉장히 simple 하지만 좋은 성능을 보였습니다. 제가 생각하기에 RN을 간단히 나타내자면 object 조합에 대한 fully-connected 라고 생각합니다.
 CNN을 통해서 나온 object의 invariant properties 와 LSTM을 통해서 나온 질문에 대한 output 값을 사용해서 object 들간의 관계추론을 학습합니다. 그럼 RN 의 수식을 한 번 볼까요?
 
-$$ RN(O) = f_\phi (\sum_{i,j} g_\theta(o_i, o_j) ) $$
+$$ RN(O) = f_\phi (\sum_{i,j} g_\theta(o_i, o_j, q) ) $$
+
+이 한줄이 RN 의 수식입니다. $$ i \in (1, d\times d) $$ 이겠죠? 수식에 따르면 모든 조합을 따지지만 논문의 저자는 모든 조합을 이용하지 않아도 된다고 합니다. 따라서 어떠한 문제를 푸느냐에 따라 유동적으로 선택하면 될 듯 합니다.
+$$ f_\phi , g_\theta $$ 는 MLP 이며 $$ g_theta $$ 의경우 3 fc-layer로 이루어져 있으며 각각 256 의 unit 을 가지고 있습니다. $$ f_\phi $$ 또한 3 fc-layer 이며 256, 256, 23 의 unit 개수를 가집니다.
+$$ f_\phi $$의 마지막 layer를 제외한 layers는 ReLu 를 사용했습니다.
+
 
 
 
