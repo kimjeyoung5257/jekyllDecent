@@ -2,7 +2,7 @@
 layout:            post
 title:             "Relational reasoning (Deepmind)"
 date:              2017-08-10 13:10:00 +0300
-tags:              A simple neural network module for relational reasoning ( Adam Santoro et al., 2017 )
+tags:              출처 : https://arxiv.org/pdf/1706.01427.pdf
 category:          Deep Learning paper review
 author:            kimjeyoung
 math:              true
