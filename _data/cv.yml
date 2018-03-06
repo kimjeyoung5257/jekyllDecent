@@ -9,44 +9,27 @@ teamlab:
         - time:             "2015 ~"
           location:         "University of Gachon"
           description:      "Data Science"
-    employment:
-        - time:             "02.2015 - 11.2017"
-          location:         "Stuttgart"
-          company:          "South-West Company"
-          position:         ".NET Developer"
-          responsibilities:
-            - "Support of web applications"
-            - "Training of students"
-            - "Flirting with the secretary"
-        - time:             "08.2011 - 02.2015"
-          location:         "Berlin"
-          company:          "Local-B Company"
-          position:         "Junior Developer"
-          responsibilities:
-            - "Developed jQuery plugins"
-            - "Had a nice place on the window"
-            - "Dreamed about beeing a senior developer"
+#    employment:
+#        - time:             "02.2015 - 11.2017"
+#          location:         "Stuttgart"
+#          company:          "South-West Company"
+#          position:         ".NET Developer"
+#          responsibilities:
+#            - "Support of web applications"
+#            - "Training of students"
+#            - "Flirting with the secretary"
+#        - time:             "08.2011 - 02.2015"
+#          location:         "Berlin"
+#          company:          "Local-B Company"
+#          position:         "Junior Developer"
+#          responsibilities:
+#            - "Developed jQuery plugins"
+#            - "Had a nice place on the window"
+#            - "Dreamed about beeing a senior developer"
     projects:
         - time:             "5 months in 2017"
-          team:             "Team of 2"
+          team:             "Jaeyoung Kim"
           title:            "GCS Project"
           technologies:     "Python, Tensorflow, Logstash"
           responsibilities:
             - "Program2vec applied Doc2vec model so that each program has high-dimensional vector used visualization."
-
-        - time:             "9 months in 2016"
-          team:             "Team of 6"
-          title:            "Android App"
-          technologies:     "Mono, .NET"
-          responsibilities:
-            - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo, urna id hendrerit interdum, metus dui ultricies massa."
-            - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis leo nec lacus aliy rutrum."
-            - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum."
-        - time:             "3 months in 2015"
-          team:             "Team of 2"
-          title:            "Software Evaluation"
-          technologies:     "Recruting, .NET"
-          responsibilities:
-            - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo, urna id hendrerit interdum, metus dui ultricies massa."
-            - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis leo nec lacus aliy rutrum."
-            - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum."
